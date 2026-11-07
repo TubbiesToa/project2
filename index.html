@@ -1,155 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StartPagina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="project1.CSS">    <style>
-        
-        *{
-      background-color: #4B2D08;
-     .grid-container {
-            display: grid;
-            
-            grid-gap: 30px 30px;
-            grid-template-columns: 33.33% auto 33.33%;
-            grid-template-rows: 0.01fr 0.01fr 0.01fr 0.1fr;
-            background-color: #FFD966;
-            padding: 10px;
-        }.grid-container>div {
-            background-color: #4B2D08;
-            border: 5px solid #000000;
-            padding: 20px;
-            text-align: center;
-            color: #ffd9668b;
-            float: left;
-        }
-         .mok {
-            width: 10%;
-            margin-left: 15px;
-            margin-bottom: 15px;
-        }
+<html lang="nl">
 
-   
-        .Hoofd {
-            margin-left: 15px;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start - Toa Turlinckx</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #4B2D08;
             color: #FFD966;
         }
-        .Hoofd2 {
-            
-            margin-left: 530px;
+
+        .card {
+            background-color: #3a2206;
+            border: 2px solid #FFD966;
+            color: #FFD966;
+        }
+
+        .btn-geel {
+            background-color: #FFD966;
             color: #4B2D08;
-        }
-       body {
-            margin: 0;
-            font-family: Arial, sans-serif;
+            font-weight: bold;
         }
 
-        .navigation {
-            overflow: hidden;
-            background-color: #4B2D08;
+        footer {
+            background-color: #3a2206;
+            border-top: 5px solid #FFD966;
         }
-
-        .navigation a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        .navigation a:hover {
-            background-color: #eb6241;
-        }
-
-        .navigation a.active {
-            background-color: #e74018;
-        }
-
-        .navigation a.icon {
-            float: right;
-            display: none;
-        }
-         @media screen and (max-width: 600px) {
-
-            .navigation a:not(:first-child) {
-                display: none;
-            }
-
-            .navigation a.icon {
-                display: block;
-            }
-
-            .navigation.responsive {
-                position: relative;
-            }
-
-            .navigation.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-
-            .navigation.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-
-    }
-   
-}
     </style>
 </head>
+
 <body>
-   
-      <nav class="navigation" id="navigation-head">
-        <a href="/project1/index.html" class="active">Start</a>
-        <a href="/project1/hobby.html">Hobby's</a>
-        <a href="/project1/ervaring.html">Ervaring</a>
-        <a href="/project1/contact.html">Contact</a>
-        <a href="/project1/cv.html">Cv</a>
-        <a href="#" class="icon" onclick="toggleResponsiveClass()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-        <script>
-        function toggleResponsiveClass() {
-            console.log('Hello World')
-            let element = document.getElementById("navigation-head");
-            if (element.className === "navigation") {
-                element.className += " responsive";
-            } else {
-                element.className = "navigation";
-            }
-        }
-    </script>
-    <h1 class = "Hoofd">Toa Turlinckx</h1>
-      <div>
-        <img src="Images/ToaTurlinckx.jpeg" alt="ToaTurlinckx" title="ToaTurlinckx" class="mok">
-    </div>
-    <div class="grid-container">
-        <div>
-            <h2>Over mij</h2> 
-        <p>Ik ben iemand die graag nieuwe dingen leert en zichzelf wil blijven verbeteren. Ik ben geïnteresseerd in computers en technologie en vind het leuk om met verschillende programma's te werken. Ik probeer graag nieuwe dingen uit en sta open om nieuwe vaardigheden aan te leren. Wanneer ik iets interessant vind, probeer ik er meer over te weten te komen en mijn kennis uit te breiden. Ik vind het belangrijk om bij te leren en mezelf verder te ontwikkelen, zowel op persoonlijk vlak als op het gebied van programmeren.
-        </p>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3a2206;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Toa Turlinckx</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hobby.html">Hobby's</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaring</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Cv</a></li>
+                </ul>
+            </div>
         </div>
-        <div> <h2>Waar ben ik goed in?</h2> 
-            <p>Ik ben goed in programmeren en kan snel nieuwe programmeertalen aanleren. Ik vind het leuk om problemen op te lossen en na te denken over hoe ik iets op de beste manier kan maken. Als ik iets nieuws moet leren, probeer ik dit zo goed mogelijk te begrijpen en toe te passen.    
-            </p>
+    </nav>
+
+    <div class="container text-center py-5">
+        <h1 class="display-4">Welkom op mijn website</h1>
+        <p class="lead">Ik ben Toa Turlinckx, student en gepassioneerd door technologie.</p>
+        <a href="contact.html" class="btn btn-geel btn-lg">Neem contact op</a>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="Images/ToaTurlinckx.jpeg" class="card-img-top" alt="Over mij"
+                        style="height:200px; object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Over Mij</h5>
+                        <p class="card-text">Leer mij beter kennen.</p>
+                        <a href="ervaring.html" class="btn btn-geel">Bekijk Ervaring</a>
+                    </div>
+                </div>
             </div>
-            <div> <h2>Intresses</h2> 
-            <p>Mijn grootste interesses zijn gamen en programmeren. In mijn vrije tijd speel ik graag games, omdat ik dit leuk en ontspannend vind. Ik vind het ook interessant om te ontdekken hoe games in elkaar zitten en hoe ze precies gemaakt worden. Daarnaast ben ik graag bezig met programmeren en leer ik graag nieuwe dingen over computers en software. Het lijkt me interessant om later zelf games of andere programma's te ontwikkelen. Daarom wil ik mijn kennis over programmeren verder uitbreiden en nieuwe technieken leren die ik in mijn eigen projecten kan gebruiken.
-            </p>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="Images/Gamen.jpg" class="card-img-top" alt="Hobby"
+                        style="height:200px; object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mijn Hobby's</h5>
+                        <p class="card-text">Gamen, Pokémon en festivals.</p>
+                        <a href="hobby.html" class="btn btn-geel">Bekijk Hobby's</a>
+                    </div>
+                </div>
             </div>
-   </div>
-  
-   
-</body >
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="Images/Cv Toa Turlinckx.pdf.jpg" class="card-img-top" alt="CV"
+                        style="height:200px; object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mijn CV</h5>
+                        <p class="card-text">Mijn opleiding en vaardigheden.</p>
+                        <a href="cv.html" class="btn btn-geel">Bekijk CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2026 Toa Turlinckx. Alle rechten voorbehouden.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-warning me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-warning me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-warning"><i class="bi bi-twitter fs-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
-        

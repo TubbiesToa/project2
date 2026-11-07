@@ -1,114 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StartPagina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="project1.CSS">
+    <title>Hobby's - Toa Turlinckx</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
-        
-        *{
-      background-color: #4B2D08;
-      table {
-    border: 5px solid #000000;
-    border-collapse: collapse;
-}
-td {
-    border: 5px solid #ffd9668b;
-    padding: 5px;
-}
-th {
-    border: 5px solid #ffd9668b;
-    padding: 5px;
-}
-    
-}
+        body {
+            background-color: #4B2D08;
+            color: #FFD966;
+        }
+
+        .box {
+            background-color: #3a2206;
+            border: 2px solid #FFD966;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #3a2206;
+            border-top: 5px solid #FFD966;
+        }
     </style>
 </head>
+
 <body>
-     <nav class="navigation" id="navigation-head">
-        <a href="/project1/index.html" class="active">Start</a>
-        <a href="/project1/hobby.html">Hobby's</a>
-        <a href="/project1/ervaring.html">Ervaring</a>
-        <a href="/project1/contact.html">Contact</a>
-        <a href="/project1/cv.html">Cv</a>
-        <a href="#" class="icon" onclick="toggleResponsiveClass()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-        <script>
-        function toggleResponsiveClass() {
-            console.log('Hello World')
-            let element = document.getElementById("navigation-head");
-            if (element.className === "navigation") {
-                element.className += " responsive";
-            } else {
-                element.className = "navigation";
-            }
-        }
-    </script>
-    <h1 class = "Hoofd">Hobby's</h1>
-     
-    <div class="grid-container">
-        <div>
-            <h2>Gamen: ontspannen en plezier maken met vrienden</h2> 
-        <p>Een van mijn grootste hobby's is gamen. Ik game heel graag, vooral samen met mijn vrienden. Voor mij is gamen een leuke manier om tijd met elkaar door te brengen en plezier te maken. We kunnen samen lachen, nieuwe dingen ontdekken en elkaar helpen tijdens het spelen. Het is ook een goede manier om contact te houden met vrienden, zelfs wanneer we elkaar niet in het echt zien.
-            Ik game vooral om te ontspannen. Na een drukke dag vind ik het fijn om even achter mijn computer te zitten en mijn gedachten te verzetten. Ik hoef niet altijd competitief bezig te zijn of te proberen om de beste speler te worden. Ik vind het juist leuk om rustig te spelen en op mijn eigen tempo vooruitgang te maken. Daarom speel ik graag sandboxgames en automationgames.
-            Sandboxgames geven mij veel vrijheid. Ik kan zelf bepalen wat ik bouw, hoe ik speel en welke doelen ik voor mezelf stel. Dat vind ik leuk, omdat ik mijn creativiteit kan gebruiken en telkens iets nieuws kan proberen. Automationgames spreken mij dan weer aan omdat ik graag systemen bouw en dingen steeds efficiënter probeer te maken. Het geeft voldoening wanneer alles uiteindelijk goed samenwerkt. </p>
-            <img src="Images/Gamen.jpg" alt="ToaTurlinckx" title="ToaTurlinckx" class="mok">
 
-        </div>
-        <div> <h2>Pokémonkaarten en figuren verzamelen</h2> 
-            <p>Naast gamen verzamel ik ook graag Pokémonkaarten. Wat mij vooral aantrekt, is hoe mooi de kaarten eruitzien. Sommige kaarten hebben prachtige illustraties, speciale kleuren of glanzende effecten. Ik vind het leuk om verschillende kaarten te bekijken en mijn collectie langzaam uit te breiden. Het gaat voor mij niet alleen om de waarde van de kaarten, maar vooral om het plezier dat ik eraan beleef.
-                Ik vind het verzamelen interessant omdat er zoveel verschillende kaarten bestaan. Iedere kaart heeft een eigen afbeelding en uitstraling. Daardoor is er altijd wel iets nieuws dat mijn aandacht trekt. Wanneer ik een kaart tegenkom die ik bijzonder mooi vind, geeft dat mij extra motivatie om mijn verzameling verder aan te vullen. Ik hoef niet per se de zeldzaamste of duurste kaarten te hebben om ervan te genieten.
-                Daarnaast verzamel ik ook figuren. Die verzameling is wat gevarieerder dan mijn Pokémonkaartenverzameling. Ik vind het leuk om verschillende soorten figuren te hebben, omdat ze allemaal iets anders uitstralen. Sommige zijn vooral mooi om naar te kijken, terwijl andere mij aanspreken door hun ontwerp of het personage dat ze voorstellen. Ik vind het fijn om mijn verzamelingen te kunnen bekijken en mijn eigen interesses erin terug te zien.
-                <img src="Images/Pokemon.jpg" alt="ToaTurlinckx" title="ToaTurlinckx" class="mok">
-
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3a2206;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Toa Turlinckx</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="hobby.html">Hobby's</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaring</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Cv</a></li>
+                </ul>
             </div>
-            <div> <h2>Fuiven en festivals bezoeken</h2> 
-            <p> k ga ook graag naar een fuif of een festival. Ik vind het leuk om muziek te beleven, samen met vrienden op stap te gaan en nieuwe herinneringen te maken. Op zulke evenementen hangt er vaak een gezellige sfeer en kan iedereen genieten van de muziek. Het is een fijne afwisseling met mijn andere hobby’s, waarbij ik meestal thuis bezig ben.
-                Dit jaar ben ik al naar Pukkelpop en Rock Werchter geweest. Dat zijn twee bekende festivals waar veel mensen samenkomen om naar verschillende artiesten en muziekgenres te luisteren. Ik vind het leuk dat je op festivals verschillende soorten muziek kunt ontdekken en dat er altijd iets te beleven valt. Bovendien is het een mooie gelegenheid om samen met vrienden een leuke dag of avond te hebben.
-                Ik ga waarschijnlijk nog vaker naar fuiven en festivals in de toekomst. Het lijkt mij leuk om nog meer evenementen te bezoeken en nieuwe ervaringen op te doen. Voor mij draait het vooral om de sfeer, de muziek en het samenzijn met andere mensen.
-            </p>
-                <img src="Images/festival.jpg" alt="ToaTurlinckx" title="ToaTurlinckx" class="mok">
-   </div>
-    <div>
-    <h2>Wat mijn hobby's met elkaar gemeen hebben</h2>
-            <p>
-                Hoewel gamen, verzamelen en festivals bezoeken op het eerste gezicht heel verschillend lijken, hebben ze voor mij toch iets gemeen. Ze zorgen ervoor dat ik mijn vrije tijd op een leuke manier kan invullen. Bij gamen kan ik ontspannen en creatief bezig zijn, bij het verzamelen kan ik genieten van mooie ontwerpen en bij festivals kan ik muziek beleven en plezier maken met vrienden.
-            </p>
-            
-    </div>
-    <div>
-       <h2>Overzicht van mijn hobby's</h2>
+        </div>
+    </nav>
 
-<table>
-    <tr>
-        <th>Hobby</th>
-        <th>Wat vind ik er leuk aan?</th>
-        <th>Met wie?</th>
-    </tr>
-    <tr>
-        <td>Gamen</td>
-        <td>Ontspannen, creatief bezig zijn en plezier maken</td>
-        <td>Vooral met vrienden</td>
-    </tr>
-    <tr>
-        <td>Pokémonkaarten en figuren verzamelen</td>
-        <td>Mooie kaarten en figuren ontdekken en mijn collectie uitbreiden</td>
-        <td>Vooral alleen</td>
-    </tr>
-    <tr>
-        <td>Fuiven en festivals</td>
-        <td>Genieten van muziek, de sfeer en nieuwe herinneringen maken</td>
-        <td>Met vrienden</td>
-    </tr>
-</table>
+    <div class="container my-5">
+        <h1 class="mb-4">Mijn Hobby's</h1>
+
+        <div id="hobbySlider" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/Gamen.jpg" class="d-block w-100" alt="Gamen"
+                        style="height:400px; object-fit:cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/Pokemon.jpg" class="d-block w-100" alt="Pokemon"
+                        style="height:400px; object-fit:cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/festival.jpg" class="d-block w-100" alt="Festival"
+                        style="height:400px; object-fit:cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hobbySlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hobbySlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="box">
+            <h2>Gamen</h2>
+            <p>Een van mijn grootste hobby's is gamen. Ik game heel graag, vooral samen met mijn vrienden. Voor mij is
+                gamen een leuke manier om tijd met elkaar door te brengen en plezier te maken. We kunnen samen lachen,
+                nieuwe dingen ontdekken en elkaar helpen tijdens het spelen. Het is ook een goede manier om contact te
+                houden met vrienden, zelfs wanneer we elkaar niet in het echt zien.
+                Ik game vooral om te ontspannen. Na een drukke dag vind ik het fijn om even achter mijn computer te
+                zitten en mijn gedachten te verzetten. Ik hoef niet altijd competitief bezig te zijn of te proberen om
+                de beste speler te worden. Ik vind het juist leuk om rustig te spelen en op mijn eigen tempo vooruitgang
+                te maken. Daarom speel ik graag sandboxgames en automationgames.
+                Sandboxgames geven mij veel vrijheid. Ik kan zelf bepalen wat ik bouw, hoe ik speel en welke doelen ik
+                voor mezelf stel. Dat vind ik leuk, omdat ik mijn creativiteit kan gebruiken en telkens iets nieuws kan
+                proberen. Automationgames spreken mij dan weer aan omdat ik graag systemen bouw en dingen steeds
+                efficiënter probeer te maken. Het geeft voldoening wanneer alles uiteindelijk goed samenwerkt.</p>
+        </div>
+        <div class="box">
+            <h2>Pokémon verzamelen</h2>
+            <p>Naast gamen verzamel ik ook graag Pokémonkaarten. Wat mij vooral aantrekt, is hoe mooi de kaarten
+                eruitzien. Sommige kaarten hebben prachtige illustraties, speciale kleuren of glanzende effecten. Ik
+                vind het leuk om verschillende kaarten te bekijken en mijn collectie langzaam uit te breiden. Het gaat
+                voor mij niet alleen om de waarde van de kaarten, maar vooral om het plezier dat ik eraan beleef.
+                Ik vind het verzamelen interessant omdat er zoveel verschillende kaarten bestaan. Iedere kaart heeft een
+                eigen afbeelding en uitstraling. Daardoor is er altijd wel iets nieuws dat mijn aandacht trekt. Wanneer
+                ik een kaart tegenkom die ik bijzonder mooi vind, geeft dat mij extra motivatie om mijn verzameling
+                verder aan te vullen. Ik hoef niet per se de zeldzaamste of duurste kaarten te hebben om ervan te
+                genieten.
+                Daarnaast verzamel ik ook figuren. Die verzameling is wat gevarieerder dan mijn
+                Pokémonkaartenverzameling. Ik vind het leuk om verschillende soorten figuren te hebben, omdat ze
+                allemaal iets anders uitstralen. Sommige zijn vooral mooi om naar te kijken, terwijl andere mij
+                aanspreken door hun ontwerp of het personage dat ze voorstellen. Ik vind het fijn om mijn verzamelingen
+                te kunnen bekijken en mijn eigen interesses erin terug te zien.</p>
+        </div>
+        <div class="box">
+            <h2>Festivals</h2>
+            <p>k ga ook graag naar een fuif of een festival. Ik vind het leuk om muziek te beleven, samen met vrienden
+                op stap te gaan en nieuwe herinneringen te maken. Op zulke evenementen hangt er vaak een gezellige sfeer
+                en kan iedereen genieten van de muziek. Het is een fijne afwisseling met mijn andere hobby's, waarbij ik
+                meestal thuis bezig ben.
+                Dit jaar ben ik al naar Pukkelpop en Rock Werchter geweest. Dat zijn twee bekende festivals waar veel
+                mensen samenkomen om naar verschillende artiesten en muziekgenres te luisteren. Ik vind het leuk dat je
+                op festivals verschillende soorten muziek kunt ontdekken en dat er altijd iets te beleven valt.
+                Bovendien is het een mooie gelegenheid om samen met vrienden een leuke dag of avond te hebben.
+                Ik ga waarschijnlijk nog vaker naar fuiven en festivals in de toekomst. Het lijkt mij leuk om nog meer
+                evenementen te bezoeken en nieuwe ervaringen op te doen. Voor mij draait het vooral om de sfeer, de
+                muziek en het samenzijn met andere mensen.</p>
+        </div>
     </div>
-</body >
+
+    <footer class="py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2026 Toa Turlinckx. Alle rechten voorbehouden.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-warning me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-warning me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-warning"><i class="bi bi-twitter fs-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
-        

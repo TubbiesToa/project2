@@ -1,83 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>StartPagina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="project1.CSS">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Toa Turlinckx</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
-        
-        *{
-      background-color: #4B2D08;
-        }
-        .formulier{
-            background-color: #4B2D08;
-            color: #ffd9668b;
-            margin-left: 15px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            border: #ffd9668b;
-            border-width: 5px;
-        }
-      
-        
+        body { background-color: #4B2D08; color: #FFD966; }
+        .box { background-color: #3a2206; border: 2px solid #FFD966; padding: 20px; margin-bottom: 20px; }
+        .form-control, .form-select { background-color: #4B2D08; border: 1px solid #FFD966; color: #FFD966; }
+        .btn-geel { background-color: #FFD966; color: #4B2D08; font-weight: bold; }
+        footer { background-color: #3a2206; border-top: 5px solid #FFD966; }
     </style>
 </head>
 <body>
-      <nav class="navigation" id="navigation-head">
-        <a href="/project1/index.html" class="active">Start</a>
-        <a href="/project1/hobby.html">Hobby's</a>
-        <a href="/project1/ervaring.html">Ervaring</a>
-        <a href="/project1/contact.html">Contact</a>
-        <a href="/project1/cv.html">Cv</a>
-        <a href="#" class="icon" onclick="toggleResponsiveClass()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-        <script>
-        function toggleResponsiveClass() {
-            console.log('Hello World')
-            let element = document.getElementById("navigation-head");
-            if (element.className === "navigation") {
-                element.className += " responsive";
-            } else {
-                element.className = "navigation";
-            }
-        }
-    </script>
-    <h1 class = "Hoofd">Contact</h1>
-     
-    <div class="grid-container">
-        <div>
-            <h2>Te bereiken</h2> 
-            <p>Email: tturlinckx@gmail.com</p>
-            <p></p>
-        </div>
-         <form action="https://tm-statweb.be/forms.php" method="post">
-        <div class="formulier">
-            <h2>Formulier:</h2>
-            <label for="emailadres">E-mailadres</label>
-            <input type="email" id="emailadres" name="mailpers" required>
-        <div>
-        
-        <div>
-            <label for="naam">Naam</label>
-            <input type="text" id="naam" name="naampers" required>
-        <div>
-            <div>
-                <label for="onderwerp">Onderwerp</label>
-                <input type="text" id = "onderwerp" name = "onderwerppers" required>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3a2206;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Toa Turlinckx</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hobby.html">Hobby's</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaring</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Cv</a></li>
+                </ul>
             </div>
-        <div>
+        </div>
+    </nav>
 
-            <label for="bericht">Bericht:</label>
-            <textarea name="Berichtpers" id="bericht" rows="5"></textarea>
-        <div>
-     <input type="submit" value="Verzenden">
-                <div>
+    <div class="container my-5">
+        <h1>Contact</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box">
+                    <h2>Gegevens</h2>
+                    <p><i class="bi bi-envelope"></i> tturlinckx@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="box">
+                    <h2>Stuur een bericht</h2>
+                    <form action="https://tm-statweb.be/forms.php" method="post" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label">Naam (verplicht)</label>
+                            <input type="text" class="form-control" name="naampers" required>
+                            <div class="invalid-feedback">Vul je naam in.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">E-mail (verplicht)</label>
+                            <input type="email" class="form-control" name="mailpers" required>
+                            <div class="invalid-feedback">Vul een geldig e-mailadres in.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Interesse</label>
+                            <select class="form-select" name="interessepers" required>
+                                <option value="">Kies...</option>
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                                <option value="Python">Python</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Vraag</label>
+                            <textarea class="form-control" name="Berichtpers" rows="4" required></textarea>
+                            <div class="invalid-feedback">Typ je vraag.</div>
+                        </div>
+                        <button type="submit" class="btn btn-geel">Verzenden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</body >
-
+    <footer class="py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2026 Toa Turlinckx. Alle rechten voorbehouden.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-warning me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-warning me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-warning"><i class="bi bi-twitter fs-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-        

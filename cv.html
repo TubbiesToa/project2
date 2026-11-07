@@ -1,50 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="project1.CSS">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-   <style>
-    *{
-        
-        scroll-box {
-            width: 300px;
-            height: 150px;
-            overflow: auto;
-            border: 1px solid #FFD966; 
-            padding: 10px;
+    <title>CV - Toa Turlinckx</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bg-donkerbruin {
+            background-color: #3b2003;
         }
-    }
-   </style>
-</head>
-<body>
-    
-     <nav class="navigation" id="navigation-head">
-        <a href="/project1/index.html" class="active">Start</a>
-        <a href="/project1/hobby.html">Hobby's</a>
-        <a href="/project1/ervaring.html">Ervaring</a>
-        <a href="/project1/contact.html">Contact</a>
-        <a href="/project1/cv.html">Cv</a>
-        <a href="#" class="icon" onclick="toggleResponsiveClass()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-        <script>
-        function toggleResponsiveClass() {
-            console.log('Hello World')
-            let element = document.getElementById("navigation-head");
-            if (element.className === "navigation") {
-                element.className += " responsive";
-            } else {
-                element.className = "navigation";
-            }
-        }
-    </script>
-<div class = "scroll-box">
-        <img src="Images/Cv Toa Turlinckx.pdf.jpg" alt="cv" title="cv" class="mok">
 
+        .bg-geel {
+            background-color: #f7d984;
+        }
+
+        .tekst-donkerbruin {
+            color: #3b2003;
+        }
+
+        .tekst-geel {
+            color: #f7d984;
+        }
+
+        .profielfoto {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .main-row {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3a2206;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Toa Turlinckx</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hobby.html">Hobby's</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ervaring.html">Ervaring</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cv.html">Cv</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row g-0 main-row">
+
+        <div class="col-md-4 bg-donkerbruin tekst-geel p-5 text-center d-flex flex-column">
+
+            <img src="Images/ToaTurlinckx.jpeg" alt="Toa Turlinckx" class="profielfoto mx-auto mb-4 mt-3">
+
+            <h4 class="fw-bold mb-2">Contact</h4>
+            <p class="mb-1">Eksterstraat 30</p>
+            <p class="mb-1">0468511522</p>
+            <p class="mb-1">tturlinckx@gmail.com</p>
+            <p class="mb-4">🇧🇪 België</p>
+
+            <h4 class="fw-bold mb-2">Talen:</h4>
+            <p class="mb-1">Nederlands: Moedertaal</p>
+            <p class="mb-1">Frans: Basis</p>
+            <p class="mb-4">Engels: Zeer goed</p>
+
+            <h4 class="fw-bold mb-2">Vervoer</h4>
+            <p class="mb-1">Fiets (voorkeur)</p>
+            <p class="mb-4">Auto mogelijk (geen rijbewijs)</p>
+
+            <h4 class="fw-bold mb-2">Ervaring</h4>
+            <p class="fw-bold mb-1">Vakantiewerk - Bruynkens</p>
+            <p class="mb-3">(vleesfabriek)</p>
+            <p class="mb-1">Verpakken van vlees</p>
+            <p class="mb-4">Werken in teamverband binnen een productieomgeving</p>
+
+            <p class="fw-bold mb-1">Studentenjob - Bakker Van Roy</p>
+            <p class="mb-3">(oktober - februari)</p>
+            <p class="mb-1">Klaarmaken van bestellingen</p>
+            <p class="mb-1">Brood snijden</p>
+            <p class="mb-1">Afwas en onderhoudswerk</p>
+
+        </div>
+
+        <div class="col-md-8 bg-geel tekst-donkerbruin p-5">
+
+            <h1 class="text-center fw-bold display-5 mb-2">Toa Turlinckx</h1>
+            <h2 class="text-center fw-bold mb-5">Profiel</h2>
+
+            <p class="text-center mb-5 lh-lg">
+                Ik ben een gemotiveerde en sociaal bewogen leerling uit het zesde middelbaar, met een grote interesse in
+                solidariteit en maatschappelijke thema's. Samenwerken doe ik graag en goed: ik ben een teamspeler die
+                open communiceert en anderen altijd wil helpen. Dankzij mijn sterke oog-handcoördinatie kan ik
+                praktische taken snel en nauwkeurig uitvoeren. Ik zet mij met plezier in voor projecten die een
+                positieve impact hebben op het leven van jongeren. Ik heb ook een goede kennis van computers en
+                hardware.
+            </p>
+
+            <h3 class="text-center fw-bold mb-3">Opleiding</h3>
+            <p class="text-center fw-bold mb-2">Diploma Basisschool De Luchtballon Geel</p>
+            <p class="text-center fw-bold mb-1">Atheneum GO! Geel</p>
+            <p class="text-center mb-1">6 Informatica Communicatiewetenschappen</p>
+            <p class="text-center mb-1">2019 - 2026</p>
+            <p class="text-center mb-5">Na 6de jaar naar hogeschool vanaf volgend schooljaar</p>
+
+            <h3 class="text-center fw-bold mb-4">Vaardigheden</h3>
+
+            <p class="mb-3"><strong>Teamwerk:</strong> Sterke samenwerkingsvaardigheden; open communicatie, luisteren
+                naar anderen en bijdragen aan een positief groepsklimaat.</p>
+
+            <p class="mb-3"><strong>ICT:</strong> computers monteren, programmeren in Visual Basic, Python en Java op
+                school basis</p>
+
+            <p class="mb-3"><strong>Oog-handcoördinatie:</strong> Snel en nauwkeurig werken bij praktische en technische
+                opdrachten.</p>
+
+            <p class="mb-3"><strong>Communicatie:</strong> Duidelijke en respectvolle communicatie in een teamcontext.
+            </p>
+
+            <p class="mb-3"><strong>Inzet:</strong> Enthousiast om bij te dragen aan sociale projecten zoals YOUCA
+                Action Day.</p>
+
+        </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

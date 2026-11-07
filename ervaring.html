@@ -1,71 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StartPagina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="project1.CSS">
+    <title>Ervaring - Toa Turlinckx</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
-        
-        *{
-      background-color: #4B2D08;
-
-}
+        body { background-color: #4B2D08; color: #FFD966; }
+        .card { background-color: #3a2206; border: 2px solid #FFD966; color: #FFD966; margin-bottom: 20px; }
+        footer { background-color: #3a2206; border-top: 5px solid #FFD966; }
     </style>
 </head>
 <body>
-      <nav class="navigation" id="navigation-head">
-        <a href="/project1/index.html" class="active">Start</a>
-        <a href="/project1/hobby.html">Hobby's</a>
-        <a href="/project1/ervaring.html">Ervaring</a>
-        <a href="/project1/contact.html">Contact</a>
-        <a href="/project1/cv.html">Cv</a>
-        <a href="#" class="icon" onclick="toggleResponsiveClass()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-        <script>
-        function toggleResponsiveClass() {
-            console.log('Hello World')
-            let element = document.getElementById("navigation-head");
-            if (element.className === "navigation") {
-                element.className += " responsive";
-            } else {
-                element.className = "navigation";
-            }
-        }
-    </script>
-    <h1 class = "Hoofd">Ervaring</h1>
-     
-    <div class="grid-container">
-        <div>
-            <h2>Opleiding</h2> 
-            <p>Atheneum Go! Geel - 6ICW(Informatie Communicatiewetenschappen)</p>
-        </div>
-        <div>
-            <h2>Java Script</h2>
-            <p>Gemiddeld</p>
-        </div>
-        <div>
-            <h2>Python</h2>
-            <p>Gemiddeld</p>
-        </div>
-        <div>
-            <h2>Visual Basic</h2>
-            <p>Gemiddeld</p>
-        </div>
-        <div> 
-                <h2>Bakker</h2> 
-                <p>Ik heb al 5 maanden in een bakker gewerkt en heb lere werken met de apparaten en de brood soorte snel kunne herkennen. Ik ben dus heel flexibel en wil graag mijn best doen om bij te leren.
-        </div>
-        <div> 
-            <h2>Vlees fabriek</h2> 
-            <p> Ik heb in een vleesfabriek veel manueel werk moeten doen. Ik heb ook daar leren werken in teams binnen een productie omgeving.</p>
-       </div>
-</body >
 
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3a2206;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Toa Turlinckx</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hobby.html">Hobby's</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ervaring.html">Ervaring</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Cv</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1>Ervaring</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Opleiding</h5>
+                        <p class="card-text">Atheneum Go! Geel - 6ICW</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">Gemiddeld</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Gemiddeld</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bakker</h5>
+                        <p class="card-text">5 maanden ervaring met apparaten en broodsoorten.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Vleesfabriek</h5>
+                        <p class="card-text">Manueel werk en teamwerk in productie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2026 Toa Turlinckx. Alle rechten voorbehouden.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-warning me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-warning me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-warning"><i class="bi bi-twitter fs-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-        
